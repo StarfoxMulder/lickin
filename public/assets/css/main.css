@@ -1,0 +1,76 @@
+
+body {
+  background-image: url('/assets/images/maxresdefault2.jpg');
+  background-size: cover;
+  /*background-color: #D2EEFF;*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main {
+  padding-top: 3%;
+}
+#brandTitle {
+  font-family: 'Spinnaker', sans-serif;;
+  color: #21244C;
+  letter-spacing: 7px;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 28px;
+  width: auto;
+}
+nav {
+  background-color: #9499CC;
+  font-family: 'Spinnaker', sans-serif;
+}
+.navbar-nav {
+  color: #21244C;
+}
+.icon-bar {
+  color: #21244C;
+}
+
+
+p {
+  font-family: 'EB Garamond', serif;
+  font-size: 17px;
+}
+a {
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 20px;
+}
+label {
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 17px;
+}
+
+.homeMedia {
+  background-color: rgba(204, 192, 148, .3);
+}
+
+/*///// Registration Page /////*/
+#registration {
+
+}
+
+
+
+/*///// Error Page //////*/
+#error {
+
+}
+/*////// Home Page //////*/
+#home {
+
+}
+/*////// Index Page //////*/
+#index {
+
+}
+/*////// Login Page ///////*/
+#login {
+
+}
+#helperText{
+  text-align: center;
+}

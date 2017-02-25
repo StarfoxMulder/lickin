@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-us" style="">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/assets/images/PD Logo.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="icon" href="/assets/images/Logo_Blank_Trans_500.png">
     <title>Protected Dust</title>
     <link rel="stylesheet" href="/assets/css/reset.css" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <link rel="stylesheet" href="/assets/css/main.css" type="text/css" />
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Spinnaker" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script src="app.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   </head>
-  <header>
-    {{!-- <h1>  Protected Dusk</h1> --}}
-    <nav class="navbar navbar navbar-static-top">
-      <div class="container-fluid">
-        <!-- navbar colapse -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-           <span class="sr-only">Toggle navigation</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/public" id="brandTitle">Protected Dusk</a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="nav navbar-nav">
-            <li><a href="/">News</a></li>
-            <li class="disabled"><a href="/mostcommented">Most Commented</a></li>
-            <li class="disabled"><a href="/podcasts">Podcasts</a></li>
-            <li class="disabled"><a href="/saved" >Saved</a></li>
-            <li><a href="/profile" >Profile</a></li>
-          </ul>
-        </div>
+  <body>
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo"><img src="/assets/images/Logo_Blank_Trans_500.png">Lickin' Leukemia</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
-  </header>
-  <body>
+
     {{{ body }}}
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

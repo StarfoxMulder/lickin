@@ -17,15 +17,21 @@ main {
 }
 nav {
   font-family: 'Spinnaker', sans-serif;
+  color: #ef6c00;
+  /*value of orange darken 3*/
 }
 .navbar-nav {
-  color: #21244C;
+  color:
 }
 .icon-bar {
   color: #21244C;
 }
 #navLogoImg {
   height: 3em;
+}
+nav a {
+  color: #ef6c00 !important;
+  /*value of orange darken 3*/
 }
 
 p {
@@ -34,8 +40,15 @@ p {
   font-size: 17px;
 }
 a {
+  line-height: 2rem;
   font-family: 'Spinnaker', sans-serif;
   font-size: 17px;
+}
+h1 {
+  font-family: 'Spinnaker', sans-serif;
+}
+h5 {
+  font-family: 'Spinnaker', sans-serif;
 }
 label {
   font-family: 'Spinnaker', sans-serif;
@@ -51,6 +64,16 @@ label {
   .parallax-container .section {
     width: 100%;
   }
+
+footer .md-18 {
+  font-size: 16px;
+}
+footer p {
+  text-align: right;
+  line-height: 2rem;
+  font-family: 'Spinnaker', sans-serif;
+  font-size: 17px;
+}
 
 /*///// Registration Page /////*/
 #registration {

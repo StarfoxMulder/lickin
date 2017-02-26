@@ -20,6 +20,7 @@ mongoose.Promise = Promise;
 app.use(express.static("./public"));
 app.use(methodOverride('_method'));
 
+
 //Body-Parser
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -54,6 +55,9 @@ app.listen(PORT, function () {
   console.log('App listening on PORT ' + PORT);
 });
 
+var routes = require('./routes/index.js');
+app.use('/', routes);
+app.use('/register', routes);
 
 // Start mongoDB
 // "C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe"

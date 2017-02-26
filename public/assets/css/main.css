@@ -1,10 +1,6 @@
 
 body {
-  background-image: url('/assets/images/maxresdefault2.jpg');
-  background-size: cover;
-  /*background-color: #D2EEFF;*/
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+
 }
 
 main {
@@ -20,7 +16,6 @@ main {
   width: auto;
 }
 nav {
-  background-color: #9499CC;
   font-family: 'Spinnaker', sans-serif;
 }
 .navbar-nav {
@@ -29,7 +24,9 @@ nav {
 .icon-bar {
   color: #21244C;
 }
-
+#navLogoImg {
+  height: 3em;
+}
 
 p {
   line-height: 2rem;

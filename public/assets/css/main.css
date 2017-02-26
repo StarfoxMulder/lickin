@@ -17,19 +17,13 @@ main {
 }
 nav {
   font-family: 'Spinnaker', sans-serif;
-  color: #ef6c00;
-  /*value of orange darken 3*/
-}
-.navbar-nav {
-  color:
-}
-.icon-bar {
-  color: #21244C;
 }
 #navLogoImg {
   height: 3em;
+  margin-top: 8%;
 }
 nav a {
+  vertical-align: middle;
   color: #ef6c00 !important;
   /*value of orange darken 3*/
 }
@@ -46,9 +40,10 @@ a {
 }
 h1 {
   font-family: 'Spinnaker', sans-serif;
+  font-weight: 900;
 }
 h5 {
-  font-family: 'Spinnaker', sans-serif;
+  font-family: 'Spinnaker', sans-serif !important;
 }
 label {
   font-family: 'Spinnaker', sans-serif;
@@ -56,7 +51,7 @@ label {
 }
 
 .parallax-container {
-  min-height: 380px;
+  min-height: 400px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -90,6 +85,9 @@ footer p {
 #home {
 
 }
+#donate-button {
+ /* margin-bottom: 2em;*/
+}
 /*////// Index Page //////*/
 #index {
 
@@ -110,11 +108,22 @@ footer p {
   #index-banner .section {
     top: 10%;
   }
+  #navLogoImg {
+    height: 3em;
+    margin-top: 13%;
+  }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+  .parallax-container {
+    min-height: 470px;
+  }
+  #navLogoImg {
+    height: 3em;
+    margin-top: 3%;
   }
 }
 

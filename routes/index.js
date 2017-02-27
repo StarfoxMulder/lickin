@@ -17,6 +17,10 @@ router.get("/", function(req,res) {
   res.render("index");
 });
 
+router.get("/news", function(req,res) {
+  res.render("news");
+});
+
 router.post("/register", function(req, res) {
   console.log("req.body.userName == "+req.body.userName);
   console.log("req.body.email == "+req.body.email);

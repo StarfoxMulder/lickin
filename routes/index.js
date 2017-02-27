@@ -21,6 +21,14 @@ router.get("/news", function(req,res) {
   res.render("news");
 });
 
+router.get("/events", function(req,res) {
+  res.render("events");
+});
+
+router.get("/donate", function(req,res) {
+  res.render("donate");
+});
+
 router.post("/register", function(req, res) {
   console.log("req.body.userName == "+req.body.userName);
   console.log("req.body.email == "+req.body.email);

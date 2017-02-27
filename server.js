@@ -58,6 +58,8 @@ app.listen(PORT, function () {
 var routes = require('./routes/index.js');
 app.use('/', routes);
 app.use('/news', routes);
+app.use('/events', routes);
+app.use('/donate', routes);
 app.use('/register', routes);
 
 // Start mongoDB

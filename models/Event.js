@@ -2,7 +2,7 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 // Creating schema
-var ArticleSchema = new Schema({
+var EventSchema = new Schema({
 
   title: {
     type: String,
@@ -32,8 +32,8 @@ var ArticleSchema = new Schema({
   }
 });
 
-// Create the Article model with the ArticleSchema
-var Article = mongoose.model("Article", ArticleSchema);
+// Create the Event model with the EventSchema
+var Event = mongoose.model("Event", EventSchema);
 
 // Export the model
-module.exports = Article;
+module.exports = Event;

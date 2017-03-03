@@ -5,6 +5,7 @@ var Article = require("../models/Article.js");
 var logger = require("morgan");
 var request = require("request");
 var cheerio = require("cheerio");
+var uncl = "UNC Lineberger";
 // var helper = require("../public/helpers.js");
 
 /////  Routes  \\\\\

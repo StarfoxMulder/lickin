@@ -4,17 +4,15 @@ var app = express();
 var Article = require("../models/Article.js");
 var logger = require("morgan");
 var request = require("request");
-var helper = require("helpers.js");
+var cheerio = require("cheerio");
+// var helper = require("../public/helpers.js");
 
 /////  Routes  \\\\\
 /////  ======  \\\\\
 
-// router.get("/home", function(req, res){
-//   res.render("home", {title: "Home", user: req.user});
-// });
 
 router.get("/", function(req,res) {
-  helper.articleSearch();
+  articleSearch();
   res.render("index");
 });
 
@@ -48,3 +46,35 @@ router.post("/register", function(req, res) {
 
 module.exports = router;
 
+function articleSearch() {
+  console.log("is articleSearch registering anywhere?");
+
+  request("https://unclineberger.org/newsroom", function(error, response, html) {
+
+    var $ = cheerio.load(html);
+
+    $("dd.portletItem").each(function(i, element) {
+
+      var result = {};
+
+      result.title = $(this).children("a").children("span").text();
+      result.link = $(this).children("a").attr("href");
+      result.image = $(this).children("a").children("div").children("img").attr("src");
+      result.snip = $(this).children("a").attr("title")
+      result.source = uncl;
+      result.scrapeDate = Date.now();
+
+      var entry = new Article(result);
+
+      entry.save(function(err, doc) {
+
+        if (err) {
+        }
+        else {
+        }
+      });
+    });
+
+  }); //End of (first unique scrape target)
+
+} //End of articleSearch

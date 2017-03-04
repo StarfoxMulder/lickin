@@ -3,12 +3,14 @@ var router = express.Router();
 var app = express();
 var Article = require("../models/Article.js");
 var logger = require("morgan");
+var Promise = require("bluebird");
 var request = require("request");
 var cheerio = require("cheerio");
 var uncl = "UNC Lineberger";
 var cri = "Cancer Research Institute";
 // var helper = require("../public/helpers.js");
-
+var mongoose = require("mongoose");
+mongoose.Promise = Promise;
 /////  Routes  \\\\\
 /////  ======  \\\\\
 
@@ -58,7 +60,7 @@ function articleSearch() {
 
       var result = {};
 
-      result.title = $(this).children("a").children("span").text();
+      result.title = $(this).children("a").children("span.title").text();
       result.link = $(this).children("a").attr("href");
       result.image = $(this).children("a").children("div").children("img").attr("src");
       result.snip = $(this).children("a").attr("title")
@@ -104,31 +106,62 @@ function articleSearch() {
     });
   }); //End of Cancer Research Institute
 
-  request("http://www.cancerresearch.org/news-publications/our-blog", function(error, response, html) {
 
-    var $ = cheerio.load(html);
-
-    $("ul.storyList").children("li").each(function(i, element) {
-
-      var result = {};
-
-      result.title = $(this).children("div.storySummary").children("h3").children("a").text();
-      result.link = "http://www.cancerresearch.org/news-publications/our-blog" + $(this).children("div.storySummary").children("h3").children("a").attr("href");
-      result.image = "http://www.cancerresearch.org/news-publications/our-blog" + $(this).children("div.storyImage").children("a").children("img").attr("src");
-      result.snip = $(this).children("div.storySummary").children("div").children("p").text();
-      result.source = cri;
-      result.scrapeDate = Date.now();
-
-      var entry = new Article(result);
-
-      entry.save(function(err, doc) {
-
-        if (err) {
-        }
-        else {
-        }
-      });
-    });
-  }); //End of Cancer Research Institute
 
 } //End of articleSearch
+
+// request("https://www.google.com/webhp?sourceid=chrome-instant&rlz=1C1CHBF_enUS714US715&ion=1&espv=2&ie=UTF-8#q=immunotherapy&tbm=nws&start=10&*", function(error, response, html) {
+
+//     var $ = cheerio.load(html);
+
+//     $("div.ts").each(function(i, element) {
+//         console.log("Google 1 loaded");
+//       var result = {};
+
+//       result.title = $(this).children("div").children("h3").children("a").text();
+//       result.link = $(this).children("a").attr("href");
+//       result.image = $(this).children("a").children("img").attr("src");
+//       result.snip = $(this).children("div").children("div.st").text();
+//       result.source = $(this).children("div").children("div.slp").children("span").text();
+//       result.scrapeDate = Date.now();
+
+//       var entry = new Article(result);
+
+//       entry.save(function(err, doc) {
+
+//         if (err) {
+//           console.log(err);
+//         }
+//         else {
+//           console.log("Google pg.1: ",result);
+//         }
+//       });
+//     });
+//   }); //End of Google pg.1 results
+
+  // request("https://www.google.com/webhp?sourceid=chrome-instant&rlz=1C1CHBF_enUS714US715&ion=1&espv=2&ie=UTF-8#q=immunotherapy&tbm=nws&start=10&*", function(error, response, html) {
+
+  //   var $ = cheerio.load(html);
+
+  //   $("div.ts").each(function(i, element) {
+
+  //     var result = {};
+
+  //     result.title = $(this).children("div").children("h3").children("a").text();
+  //     result.link = $(this).children("a").attr("href");
+  //     result.image = $(this).children("a").children("img").attr("src");
+  //     result.snip = $(this).children("div").children("div.st").text();
+  //     result.source = $(this).children("div").children("div.slp").children("span").text();
+  //     result.scrapeDate = Date.now();
+
+  //     var entry = new Article(result);
+
+  //     entry.save(function(err, doc) {
+
+  //       if (err) {
+  //       }
+  //       else {
+  //       }
+  //     });
+  //   });
+  // }); //End of Google pg.2 results

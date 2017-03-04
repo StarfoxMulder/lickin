@@ -6,6 +6,7 @@ var logger = require("morgan");
 var request = require("request");
 var cheerio = require("cheerio");
 var uncl = "UNC Lineberger";
+var cri = "Cancer Research Institute";
 // var helper = require("../public/helpers.js");
 
 /////  Routes  \\\\\
@@ -48,7 +49,6 @@ router.post("/register", function(req, res) {
 module.exports = router;
 
 function articleSearch() {
-  console.log("is articleSearch registering anywhere?");
 
   request("https://unclineberger.org/newsroom", function(error, response, html) {
 
@@ -75,7 +75,60 @@ function articleSearch() {
         }
       });
     });
+  }); //End of Lineberger
 
-  }); //End of (first unique scrape target)
+  request("http://www.cancerresearch.org/news-publications/our-blog", function(error, response, html) {
+
+    var $ = cheerio.load(html);
+
+    $("ul.storyList").children("li").each(function(i, element) {
+
+      var result = {};
+
+      result.title = $(this).children("div.storySummary").children("h3").children("a").text();
+      result.link = "http://www.cancerresearch.org/news-publications/our-blog" + $(this).children("div.storySummary").children("h3").children("a").attr("href");
+      result.image = "http://www.cancerresearch.org/news-publications/our-blog" + $(this).children("div.storyImage").children("a").children("img").attr("src");
+      result.snip = $(this).children("div.storySummary").children("div").children("p").text();
+      result.source = cri;
+      result.scrapeDate = Date.now();
+
+      var entry = new Article(result);
+
+      entry.save(function(err, doc) {
+
+        if (err) {
+        }
+        else {
+        }
+      });
+    });
+  }); //End of Cancer Research Institute
+
+  request("http://www.cancerresearch.org/news-publications/our-blog", function(error, response, html) {
+
+    var $ = cheerio.load(html);
+
+    $("ul.storyList").children("li").each(function(i, element) {
+
+      var result = {};
+
+      result.title = $(this).children("div.storySummary").children("h3").children("a").text();
+      result.link = "http://www.cancerresearch.org/news-publications/our-blog" + $(this).children("div.storySummary").children("h3").children("a").attr("href");
+      result.image = "http://www.cancerresearch.org/news-publications/our-blog" + $(this).children("div.storyImage").children("a").children("img").attr("src");
+      result.snip = $(this).children("div.storySummary").children("div").children("p").text();
+      result.source = cri;
+      result.scrapeDate = Date.now();
+
+      var entry = new Article(result);
+
+      entry.save(function(err, doc) {
+
+        if (err) {
+        }
+        else {
+        }
+      });
+    });
+  }); //End of Cancer Research Institute
 
 } //End of articleSearch

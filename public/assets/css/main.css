@@ -1,3 +1,5 @@
+html {
+}
 
 body {
 
@@ -104,6 +106,9 @@ footer p {
 #newsBkg {
   min-height: 800px;
 }
+#newsP {
+  height: 100%;
+}
 .card-stacked {
   color: #3e2723;
 }
@@ -117,6 +122,10 @@ footer p {
 /*////// Donate Page //////*/
 #donateBkg {
 
+}
+
+#donate-amazon {
+  margin-bottom: 7%;
 }
 
 /*////// Register Page ///////*/
@@ -135,7 +144,7 @@ footer p {
     position: absolute;
     top: 40%;
   }
-  #index-banner .section {
+  .index-banner .section {
     top: 10%;
   }
   #navLogoImg {
@@ -145,7 +154,7 @@ footer p {
 }
 
 @media only screen and (max-width : 600px) {
-  #index-banner .section {
+  .index-banner .section {
     top: 0;
   }
   .parallax-container {

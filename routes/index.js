@@ -7,10 +7,9 @@ var Promise = require("bluebird");
 var request = require("request");
 var cheerio = require("cheerio");
 var uncl = "UNC Lineberger";
-var cri = "Cancer Research Institute";
+
 // var helper = require("../public/helpers.js");
-var mongoose = require("mongoose");
-mongoose.Promise = Promise;
+
 /////  Routes  \\\\\
 /////  ======  \\\\\
 
@@ -79,32 +78,32 @@ function articleSearch() {
     });
   }); //End of Lineberger
 
-  request("http://www.cancerresearch.org/news-publications/our-blog", function(error, response, html) {
+  // request("http://www.cancerresearch.org/news-publications/our-blog", function(error, response, html) {
 
-    var $ = cheerio.load(html);
+  //   var $ = cheerio.load(html);
 
-    $("ul.storyList").children("li").each(function(i, element) {
+  //   $("ul.storyList").children("li").each(function(i, element) {
 
-      var result = {};
+  //     var result = {};
 
-      result.title = $(this).children("div.storySummary").children("h3").children("a").text();
-      result.link = "http://www.cancerresearch.org/news-publications/our-blog" + $(this).children("div.storySummary").children("h3").children("a").attr("href");
-      result.image = "http://www.cancerresearch.org/news-publications/our-blog" + $(this).children("div.storyImage").children("a").children("img").attr("src");
-      result.snip = $(this).children("div.storySummary").children("div").children("p").text();
-      result.source = cri;
-      result.scrapeDate = Date.now();
+  //     result.title = $(this).children("div.storySummary").children("h3").children("a").text();
+  //     result.link = "http://www.cancerresearch.org/news-publications/our-blog" + $(this).children("div.storySummary").children("h3").children("a").attr("href");
+  //     result.image = "http://www.cancerresearch.org/news-publications/our-blog" + $(this).children("div.storyImage").children("a").children("img").attr("src");
+  //     result.snip = $(this).children("div.storySummary").children("div").children("p").text();
+  //     result.source = cri;
+  //     result.scrapeDate = Date.now();
 
-      var entry = new Article(result);
+  //     var entry = new Article(result);
 
-      entry.save(function(err, doc) {
+  //     entry.save(function(err, doc) {
 
-        if (err) {
-        }
-        else {
-        }
-      });
-    });
-  }); //End of Cancer Research Institute
+  //       if (err) {
+  //       }
+  //       else {
+  //       }
+  //     });
+  //   });
+  // }); //End of (Cancer Research Institute is not scrapable)
 
 
 

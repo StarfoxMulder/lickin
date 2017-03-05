@@ -4,8 +4,24 @@
       <br><br>
       <h1 class="header center orange-text text-darken-3">News Feed</h1>
       <div class="row center">
-        <div>
+        {{#each found}}
+        <div class="card horizontal">
+          <div class="card-image">
+            <img src="{{this.image}}">
+          </div>
+          <div class="card-stacked">
+            <div class="card-content">
+              <h5>{{this.title}}</h5>
+              <h6>{{this.source}}</h6>
+              <div class="divider"></div>
+              <p class="newsSnip">{{this.snip}}</p>
+            </div>
+            <div class="card-action">
+              <a href="{{this.link}}">Full Article Here</a>
+            </div>
+          </div>
         </div>
+        {{/each}}
       </div>
     </div>
   </div>

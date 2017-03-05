@@ -104,6 +104,15 @@ footer p {
 #newsBkg {
   min-height: 800px;
 }
+.card-stacked {
+  color: #3e2723;
+}
+.newsSnip {
+  font-size: 18px;
+  padding: 0% 5%;
+  margin-top: 4%;
+  font-weight: 500;
+}
 
 /*////// Donate Page //////*/
 #donateBkg {

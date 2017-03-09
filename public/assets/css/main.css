@@ -151,6 +151,9 @@ footer p {
     height: 3em;
     margin-top: 13%;
   }
+  #llFooter {
+    margin-top: 5%;
+  }
 }
 
 @media only screen and (max-width : 600px) {
@@ -178,4 +181,7 @@ footer p {
 
 footer.page-footer {
   margin: 0;
+}
+.footer-copyright {
+  display: none;
 }

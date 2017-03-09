@@ -106,9 +106,9 @@ footer p {
 #newsBkg {
   min-height: 800px;
 }
-#newsP {
+/*#newsP {
   height: 100%;
-}
+}*/
 .card-stacked {
   color: #3e2723;
 }
@@ -141,10 +141,10 @@ footer p {
 /*///// Media Queries /////*/
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
-    position: absolute;
+    position: static;
     top: 40%;
   }
-  .index-banner .section {
+  #index-banner .section {
     top: 10%;
   }
   #navLogoImg {
@@ -154,7 +154,7 @@ footer p {
 }
 
 @media only screen and (max-width : 600px) {
-  .index-banner .section {
+  #index-banner .section {
     top: 0;
   }
   .parallax-container {
@@ -163,6 +163,9 @@ footer p {
   #navLogoImg {
     height: 3em;
     margin-top: 3%;
+  }
+  .card-image {
+    display: none;
   }
 }
 

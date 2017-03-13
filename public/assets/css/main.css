@@ -193,6 +193,15 @@ footer p {
 footer.page-footer {
   margin: 0;
 }
+
 .footer-copyright {
-  display: none;
+  height: 5px !important;
+  max-height: 5px !important;
+  min-height: 5px !important;
+}
+.footer-copyright .container {
+  height: 5px !important;
+}
+footer .row {
+  margin-bottom: 0%;
 }

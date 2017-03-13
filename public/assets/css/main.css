@@ -37,12 +37,12 @@ nav a {
 p {
   line-height: 2rem;
   font-family: 'EB Garamond', serif;
-  font-size: 17px;
+  font-size: 18px;
 }
 a {
   line-height: 2rem;
   font-family: 'Spinnaker', sans-serif;
-  font-size: 17px;
+  font-size: 18px;
 }
 h1 {
   font-family: 'Spinnaker', sans-serif;
@@ -56,7 +56,7 @@ h5 {
 }
 label {
   font-family: 'Spinnaker', sans-serif;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .parallax-container {
@@ -76,7 +76,7 @@ footer p {
   text-align: right;
   line-height: 2rem;
   font-family: 'Spinnaker', sans-serif;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 /*///// Registration Page /////*/
@@ -102,6 +102,7 @@ footer p {
   margin-top: 1em;
 }
 
+
 /*///// News Page //////*/
 #newsBkg {
   min-height: 800px;
@@ -119,6 +120,7 @@ footer p {
   font-weight: 500;
 }
 
+
 /*////// Donate Page //////*/
 #donateBkg {
 
@@ -126,6 +128,15 @@ footer p {
 
 #donate-amazon {
   margin-bottom: 7%;
+}
+
+
+/*////// Events Page //////*/
+.events {
+  min-height: 500px;
+}
+.events .center {
+  margin-top: 8%;
 }
 
 /*////// Register Page ///////*/

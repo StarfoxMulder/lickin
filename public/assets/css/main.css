@@ -164,6 +164,9 @@ footer .row {
   margin-top: 8%;
   margin-bottom: 8%;
 }
+#register-button {
+  margin-top: 6%;
+}
 #eventsCopy{
   line-height: 2em;
 }
@@ -217,5 +220,11 @@ footer .row {
   }
   .card-image {
     display: none;
+  }
+}
+
+@media only screen and (max-width : 528px) {
+  #phoneBtn {
+   margin-top: 3%;
   }
 }

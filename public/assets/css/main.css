@@ -158,10 +158,11 @@ footer .row {
 
 /*////// Events Page //////*/
 .events {
-  min-height: 500px;
+  min-height: 450px;
 }
 .events .center {
   margin-top: 8%;
+  margin-bottom: 8%;
 }
 #eventsCopy{
   line-height: 2em;

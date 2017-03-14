@@ -48,11 +48,13 @@ h1 {
   font-family: 'Spinnaker', sans-serif;
   font-weight: 900;
 }
-h4 {
+h4, h5{
   font-family: 'Spinnaker', sans-serif !important;
 }
-h5 {
+h6 {
   font-family: 'Spinnaker', sans-serif !important;
+  font-size: 20px;
+  line-height: 2rem;
 }
 label {
   font-family: 'Spinnaker', sans-serif;
@@ -77,6 +79,29 @@ footer p {
   line-height: 2rem;
   font-family: 'Spinnaker', sans-serif;
   font-size: 18px;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.footer-copyright {
+  height: 5px !important;
+  max-height: 5px !important;
+  min-height: 5px !important;
+}
+.footer-copyright .container {
+  height: 5px !important;
+}
+footer .row {
+  margin-bottom: 0%;
 }
 
 /*///// Registration Page /////*/
@@ -138,6 +163,17 @@ footer p {
 .events .center {
   margin-top: 8%;
 }
+#eventsCopy{
+  line-height: 2em;
+}
+.buffer {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.buttons {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
 
 /*////// Register Page ///////*/
 #login {
@@ -181,27 +217,4 @@ footer p {
   .card-image {
     display: none;
   }
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
-}
-
-.footer-copyright {
-  height: 5px !important;
-  max-height: 5px !important;
-  min-height: 5px !important;
-}
-.footer-copyright .container {
-  height: 5px !important;
-}
-footer .row {
-  margin-bottom: 0%;
 }

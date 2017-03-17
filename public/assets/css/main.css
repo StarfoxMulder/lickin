@@ -164,9 +164,6 @@ footer .row {
   margin-top: 8%;
   margin-bottom: 8%;
 }
-#register-button {
-  margin-top: 6%;
-}
 #eventsCopy{
   line-height: 2em;
 }
@@ -204,6 +201,10 @@ footer .row {
   }
   #llFooter {
     margin-top: 5%;
+  }
+  .evTopBtn {
+    margin-top: 4%;
+    margin-bottom: 4%;
   }
 }
 

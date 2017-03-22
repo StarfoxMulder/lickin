@@ -2,11 +2,12 @@ var express = require("express");
 var router = express.Router();
 var app = express();
 var Article = require("../models/Article.js");
+var PinnedArticle = require("../models/PinnedArticle.js");
 var logger = require("morgan");
 var Promise = require("bluebird");
 var request = require("request");
 var cheerio = require("cheerio");
-var uncl = "UNC Lineberger";
+var uncl = "UNC Lineberger Comprehensive Cancer Center";
 
 // var helper = require("../public/helpers.js");
 
@@ -20,10 +21,12 @@ router.get("/", function(req,res) {
 });
 
 router.get("/news", function(req,res) {
+  PinnedArticle.find().sort({"order":1}).exec( function(err, pinned)
+
   Article.find().sort({"scrapeDate":-1}).exec( function(err, found){
     if(err) {
     } else {
-      res.render("news",{found : found});
+      res.render("news",{ pinned:pinned, found:found});
     }
   });
 });

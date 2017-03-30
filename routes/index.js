@@ -21,15 +21,25 @@ router.get("/", function(req,res) {
 });
 
 router.get("/news", function(req,res) {
-  PinnedArticle.find().sort({"order":1}).exec( function(err, pinned)
 
   Article.find().sort({"scrapeDate":-1}).exec( function(err, found){
     if(err) {
     } else {
-      res.render("news",{ pinned:pinned, found:found});
+      res.render("news",{found:found});
     }
   });
 });
+
+// router.get("/news", function(req,res) {
+//   PinnedArticle.find().sort({"order":1}).exec( function(err, pinned)
+
+//   Article.find().sort({"scrapeDate":-1}).exec( function(err, found){
+//     if(err) {
+//     } else {
+//       res.render("news",{ pinned:pinned, found:found});
+//     }
+//   });
+// });
 
 router.get("/events", function(req,res) {
   res.render("events");

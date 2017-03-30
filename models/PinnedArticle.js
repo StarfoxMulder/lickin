@@ -31,8 +31,8 @@ var PinnedArticleSchema = new Schema({
   }
 });
 
-// Create the Article model with the ArticleSchema
-var PinnedArticle = mongoose.model("Article", ArticleSchema);
+// Create the PinnedArticle model with the PinnedArticleSchema
+var PinnedArticle = mongoose.model("PinnedArticle", PinnedArticleSchema);
 
 // Export the model
 module.exports = PinnedArticle;

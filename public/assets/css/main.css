@@ -132,9 +132,6 @@ footer .row {
 #newsBkg {
   min-height: 800px;
 }
-/*#newsP {
-  height: 100%;
-}*/
 .card-stacked {
   color: #3e2723;
 }
@@ -143,6 +140,13 @@ footer .row {
   padding: 0% 5%;
   margin-top: 4%;
   font-weight: 500;
+}
+
+#pinnedArticleBanner {
+  background-image: url("./assets/images/team.jpg");
+}
+#articleBanner {
+  background-image: url("./assets/images/proIntro.jpg");
 }
 
 

@@ -1,19 +1,19 @@
 <div class="container">
   <div class="section">
     <div class="row">
-      <div class="col s12 m4">
+      <div class="col s12">
         <h1>Featured Articles</h1>
       </div>
     </div>
   </div>
 </div>
 
-<div id="index-banner" class="parallax-container">
+<div id="pinnedArticleBanner" class="container">
   <div class="section no-pad-bot">
     <div class="container">
       <br><br>
       <div class="row center">
-        {{#each found}}
+        {{#each pinned}}
         <div class="card horizontal">
           <div class="card-image">
             <img src="{{this.image}}">
@@ -34,24 +34,23 @@
       </div>
     </div>
   </div>
-  <div class="parallax" id="newsBkg"><img src="./assets/images/proIntro.jpg" alt="Unsplashed background img 1"></div>
+  <div class="parallax" id="newsBkgTop"><img src="./assets/images/team.jpg" alt="Unsplashed background img 1"></div>
 </div>
 
 <div class="container">
   <div class="section">
     <div class="row">
-      <div class="col s12 m4">
+      <div class="col s12">
         <h1>Immunotherapy News Feed</h1>
       </div>
     </div>
   </div>
 </div>
 
-<div id="index-banner" class="parallax-container">
+<div id="articleBanner" class="container">
   <div class="section no-pad-bot">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text text-darken-3">News Feed</h1>
       <div class="row center">
         {{#each found}}
         <div class="card horizontal">

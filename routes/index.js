@@ -21,7 +21,6 @@ router.get("/", function(req,res) {
 });
 
 router.get("/news", function(req,res) {
-
   Article.find().sort({"scrapeDate":-1}).exec( function(err, found){
     if(err) {
     } else {

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" id="newsPage">
   <div class="section">
 
     <div class="row">
@@ -62,33 +62,31 @@
 
     <div id="articleBanner" class="container">
       <div class="section no-pad-bot">
-        <div class="container">
-          <br><br>
-          <div class="row center">
-            {{#each found}}
-            <div class="card horizontal">
-              <div class="card-image">
-                <img src="{{this.image}}">
+        <br><br>
+        <div class="row center">
+          {{#each found}}
+          <div class="card horizontal">
+            <div class="card-image">
+              <img src="{{this.image}}">
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <h5>{{this.title}}</h5>
+                <h6>{{this.source}}</h6>
+                <div class="divider"></div>
+                <p class="newsSnip">{{this.snip}}</p>
               </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <h5>{{this.title}}</h5>
-                  <h6>{{this.source}}</h6>
-                  <div class="divider"></div>
-                  <p class="newsSnip">{{this.snip}}</p>
-                </div>
-                <div class="card-action">
-                  <a href="{{this.link}}">Full Article Here</a>
-                </div>
+              <div class="card-action">
+                <a href="{{this.link}}">Full Article Here</a>
               </div>
             </div>
-            {{/each}}
           </div>
+          {{/each}}
         </div>
       </div>
-      <div class="parallax" id="newsBkg"><img src="./assets/images/proIntro50o.jpg" alt="Unsplashed background img 1"></div>
     </div>
 
 
   </div>
+  <div class="parallax" id="newsBkg"><img src="./assets/images/proIntro50o.jpg" alt="Unsplashed background img 1"></div>
 </div>

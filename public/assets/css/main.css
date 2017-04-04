@@ -129,9 +129,22 @@ footer .row {
 
 
 /*///// News Page //////*/
-#newsBkg {
+#newsPage {
+  background-image: url("../images/proIntro50o.jpg");
   min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+/*#newsBkg {
+  background-image: url("../images/proIntro50o.jpg");
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
 .card-stacked {
   color: #3e2723;
 }

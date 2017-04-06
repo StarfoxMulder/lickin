@@ -130,21 +130,14 @@ footer .row {
 
 /*///// News Page //////*/
 #newsPage {
-  background-image: url("../images/proIntro50o.jpg");
+  background-image: url("../images/proIntro35o.jpg");
   min-height: 800px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/*#newsBkg {
-  background-image: url("../images/proIntro50o.jpg");
-  min-height: 800px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
+
 .card-stacked {
   color: #3e2723;
 }
@@ -160,6 +153,8 @@ footer .row {
 }
 .featuredText {
   font-family: 'Spinnaker', sans-serif;
+  color: #424242;
+  font-weight: 500;
 }
 
 
@@ -190,9 +185,11 @@ footer .row {
   background-image: -o-linear-gradient(left, #ef6c00, transparent);
 }
 
-.featuredMedia {
+#featuredMedia {
   border: 3px solid #ef6c00;
-  height: 267px;
+  max-height: 480px;
+  max-width: 853px;
+  overflow-y: hidden;
 }
 
 #newsPage {

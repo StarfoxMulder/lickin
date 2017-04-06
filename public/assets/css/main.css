@@ -19,10 +19,15 @@ main {
 }
 nav {
   font-family: 'Spinnaker', sans-serif;
+  z-index: 2;
+}
+#logo-container {
+  z-index: 4;
 }
 #navLogoImg {
   height: 3em;
   margin-top: 8%;
+  z-index: 5;
 }
 nav a {
   vertical-align: middle !important;

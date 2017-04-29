@@ -67,6 +67,10 @@ router.post("/register", function(req, res) {
   }))
 });
 
+router.get("/family", function(req,res) {
+  res.render("family");
+});
+
 module.exports = router;
 
 function articleSearch() {

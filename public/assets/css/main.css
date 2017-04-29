@@ -109,6 +109,9 @@ footer .row {
   margin-bottom: 0%;
 }
 
+.socialIcon {
+  max-height: 22px;
+}
 /*///// Registration Page /////*/
 #registration {
 

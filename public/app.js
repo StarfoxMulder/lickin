@@ -14,6 +14,18 @@ window.onload = function() {
   });
 
 };
+
+
+$(document).ready(function() {
+  
+  if($('#media-banner')){
+    $('#mediaSlider').lightGallery({
+      thumbnail:true
+    }); 
+  };
+
+});
+
 // $(".familyMember").click(function(e){
 //   $(this).addClass("active")
 //   function changeImg() {

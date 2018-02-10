@@ -52,7 +52,7 @@ a {
 h1 {
   font-family: 'Spinnaker', sans-serif;
   font-weight: 900;
-  text-shadow: 1px 1px #ffF;
+  text-shadow: 2px 2px #ffF;
 }
 h2, h4, h5{
   font-family: 'Spinnaker', sans-serif !important;
@@ -165,6 +165,27 @@ footer .row {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#newsPage h1 {
+  color: #00CBEF;
+  text-shadow: 2px 2px #FFF;
+}
+
+.newsVideos {
+  height: 490px !important;
+}
+.newsVideos .s10{
+  height: 490px !important;
+}
+.newsVideos .s10 .video-container{
+  margin: 0 auto;
+  width: 853px;
+  height: 490px !important;
+  padding-bottom: 0 !important;
+}
+
+#media-banner img {
+  max-width: 800px;
 }
 
 .card-stacked {

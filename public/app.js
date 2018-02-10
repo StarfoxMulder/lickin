@@ -22,9 +22,12 @@ $(document).ready(function() {
     $('#mediaSlider').lightGallery({
       thumbnail:true
     }); 
+    console.log("#mediaSlider init");
   };
 
 });
+
+
 
 // $(".familyMember").click(function(e){
 //   $(this).addClass("active")

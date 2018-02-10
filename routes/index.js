@@ -56,6 +56,10 @@ router.get("/donate", function(req,res) {
   res.render("donate");
 });
 
+router.get("/media", function(req,res) {
+  res.render("media");
+});
+
 router.post("/register", function(req, res) {
   console.log("req.body.userName == "+req.body.userName);
   console.log("req.body.email == "+req.body.email);

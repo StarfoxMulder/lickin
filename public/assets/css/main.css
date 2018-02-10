@@ -29,20 +29,20 @@ nav {
   margin-top: 8%;
   z-index: 5;
 }
-nav a {
-  vertical-align: middle !important;
+nav li a {
+  font-size: 1.3rem !important;
   color: #ef6c00 !important;
   /*value of orange darken 3*/
 }
 .hide-on-med-and-down {
-  font-size: 22px !important;
-  vertical-align: middle !important;
+  font-size: 24px !important;
+  margin-top: 1.5% !important;
 }
 
 p {
   line-height: 2rem;
   font-family: 'EB Garamond', serif;
-  font-size: 18px;
+  font-size: 20px;
 }
 a {
   line-height: 2rem;
@@ -52,8 +52,9 @@ a {
 h1 {
   font-family: 'Spinnaker', sans-serif;
   font-weight: 900;
+  text-shadow: 1px 1px #ffF;
 }
-h4, h5{
+h2, h4, h5{
   font-family: 'Spinnaker', sans-serif !important;
 }
 h6 {
@@ -123,6 +124,19 @@ footer .row {
 #error {
 
 }
+/*///// Media Page //////*/
+#media-banner{
+  background-color: #f6f6f6;
+}
+.VPheader {
+  color: #13BC77;
+  text-shadow: 2px 2px #00CBEF;
+}
+#eventVideo {
+
+}
+
+
 
 /*////// Home Page //////*/
 #home {
@@ -133,6 +147,13 @@ footer .row {
 }
 #register-button {
   margin-top: 1em;
+}
+.tShadow {
+  color: #00CBEF;
+  text-shadow: 2px 2px #FFF;
+}
+.opacity3 {
+  opacity: 0.3;
 }
 
 
@@ -295,7 +316,7 @@ footer .row {
     position: static;
     top: 40%;
   }
-  #index-banner .section {
+  #media-banner .section, #index-banner .section {
     top: 10%;
   }
   #navLogoImg {
@@ -312,7 +333,7 @@ footer .row {
 }
 
 @media only screen and (max-width : 600px) {
-  #index-banner .section {
+  #media-banner .section, #index-banner .section {
     top: 0;
   }
   .parallax-container {

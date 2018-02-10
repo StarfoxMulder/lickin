@@ -62,6 +62,7 @@ app.use('/events', routes);
 app.use('/donate', routes);
 app.use('/register', routes);
 app.use('/family', routes);
+app.use('/media', routes);
 
 // Start mongoDB
 // "C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe"

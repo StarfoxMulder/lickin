@@ -142,6 +142,13 @@ footer h5 {
 #eventVideo {
 
 }
+.portraits {
+  margin-top: 3%;
+}
+#media-banner .portraits .l6:nth-of-type(2) img {
+  max-width: 525px;
+  margin-left: 8%;
+}
 
 
 

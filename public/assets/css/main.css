@@ -134,6 +134,11 @@ footer h5 {
   color: #13BC77;
   text-shadow: 2px 2px #00CBEF;
 }
+.mediaVid {
+  margin-top: 6%;
+  margin-bottom: 7%;
+  transform: scale(1.3);
+}
 #eventVideo {
 
 }

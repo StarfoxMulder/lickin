@@ -20,7 +20,7 @@ $(document).ready(function() {
   
   if($('#media-banner')){
     $('#mediaSlider').lightGallery({
-      thumbnail:true
+    //  thumbnail:true
     }); 
     console.log("#mediaSlider init");
   };

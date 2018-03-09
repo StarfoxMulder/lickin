@@ -34,6 +34,9 @@ nav li a {
   color: #ef6c00 !important;
   /*value of orange darken 3*/
 }
+nav a.button-collapse i {
+  color: #ef6c00 !important;
+}
 .hide-on-med-and-down {
   font-size: 24px !important;
   margin-top: 1.5% !important;

@@ -65,7 +65,7 @@ app.use('/family', routes);
 app.use('/media', routes);
 
 // Start mongoDB
-// "C:\Program Files\MongoDB\Server\3.4\bin\mongod.exe"
+// "C:\Program Files\MongoDB\Server\3.6\bin\mongod.exe"
 //
 // Connect to MongoDB
-// "C:\Program Files\MongoDB\Server\3.4\bin\mongo.exe"
+// "C:\Program Files\MongoDB\Server\3.6\bin\mongo.exe"

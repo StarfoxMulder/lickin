@@ -1,15 +1,14 @@
-html {
-}
+html {}
 
-body {
-
-}
+body {}
 
 main {
   padding-top: 3%;
 }
+
 #brandTitle {
-  font-family: 'Spinnaker', sans-serif;;
+  font-family: 'Spinnaker', sans-serif;
+  ;
   color: #21244C;
   letter-spacing: 7px;
   margin-left: 5%;
@@ -17,26 +16,32 @@ main {
   font-size: 28px;
   width: auto;
 }
+
 nav {
   font-family: 'Spinnaker', sans-serif;
   z-index: 2;
 }
+
 #logo-container {
   z-index: 4;
 }
+
 #navLogoImg {
   height: 3em;
   margin-top: 8%;
   z-index: 5;
 }
+
 nav li a {
   font-size: 1.3rem !important;
   color: #ef6c00 !important;
   /*value of orange darken 3*/
 }
+
 nav a.button-collapse i {
   color: #ef6c00 !important;
 }
+
 .hide-on-med-and-down {
   font-size: 24px !important;
   margin-top: 1.5% !important;
@@ -47,24 +52,31 @@ p {
   font-family: 'EB Garamond', serif;
   font-size: 20px;
 }
+
 a {
   line-height: 2rem;
   font-family: 'Spinnaker', sans-serif;
   font-size: 18px;
 }
+
 h1 {
   font-family: 'Spinnaker', sans-serif;
   font-weight: 900;
   text-shadow: 2px 2px #ffF;
 }
-h2, h4, h5{
+
+h2,
+h4,
+h5 {
   font-family: 'Spinnaker', sans-serif !important;
 }
+
 h6 {
   font-family: 'Spinnaker', sans-serif !important;
   font-size: 20px;
   line-height: 2rem;
 }
+
 label {
   font-family: 'Spinnaker', sans-serif;
   font-size: 18px;
@@ -74,15 +86,17 @@ label {
   min-height: 400px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, .9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+
+.parallax-container .section {
+  width: 100%;
+}
 
 footer .md-18 {
   font-size: 16px;
 }
+
 footer p {
   text-align: right;
   line-height: 2rem;
@@ -93,6 +107,7 @@ footer p {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
@@ -106,48 +121,63 @@ footer.page-footer {
   max-height: 5px !important;
   min-height: 5px !important;
 }
+
 .footer-copyright .container {
   height: 5px !important;
 }
+
 footer .row {
   margin-bottom: 0%;
 }
+
 footer h5 {
   text-shadow: 2px 2px #000;
 }
+
 .socialIcon {
   max-height: 22px;
 }
-/*///// Registration Page /////*/
-#registration {
 
-}
+/*///// Registration Page /////*/
+#registration {}
 
 
 
 /*///// Error Page //////*/
-#error {
+#error {}
 
-}
 /*///// Media Page //////*/
-#media-banner{
+#media-banner {
   background-color: #f6f6f6;
 }
+
 .VPheader {
   color: #13BC77;
   text-shadow: 2px 2px #00CBEF;
 }
+
 .mediaVid {
   margin-top: 6%;
   margin-bottom: 7%;
   transform: scale(1.3);
 }
-#eventVideo {
 
-}
-.portraits {
+#eventVideo {}
+
+#portraits {
   margin-top: 3%;
 }
+
+/*
+#portraits .mom img {
+  max-width: 500px;
+}
+
+#portraits .dad img {
+  max-width: 400px;
+}
+*/
+
 #media-banner .portraits .l6:nth-of-type(2) img {
   max-width: 525px;
   margin-left: 8%;
@@ -156,19 +186,21 @@ footer h5 {
 
 
 /*////// Home Page //////*/
-#home {
+#home {}
 
-}
 #donate-button {
- /* margin-bottom: 2em;*/
+  /* margin-bottom: 2em;*/
 }
+
 #register-button {
   margin-top: 1em;
 }
+
 .tShadow {
   color: #00CBEF;
   text-shadow: 2px 2px #FFF;
 }
+
 .opacity3 {
   opacity: 0.3;
 }
@@ -183,6 +215,7 @@ footer h5 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #newsPage h1 {
   color: #00CBEF;
   text-shadow: 2px 2px #FFF;
@@ -191,10 +224,12 @@ footer h5 {
 .newsVideos {
   height: 490px !important;
 }
-.newsVideos .s10{
+
+.newsVideos .s10 {
   height: 490px !important;
 }
-.newsVideos .s10 .video-container{
+
+.newsVideos .s10 .video-container {
   margin: 0 auto;
   width: 853px;
   height: 490px !important;
@@ -208,16 +243,19 @@ footer h5 {
 .card-stacked {
   color: #3e2723;
 }
+
 .newsSnip {
   font-size: 18px;
   padding: 0% 5%;
   margin-top: 4%;
   font-weight: 500;
 }
+
 .s12 h1 {
   text-align: center;
   color: #6d4c41;
 }
+
 .featuredText {
   font-family: 'Spinnaker', sans-serif;
   color: #424242;
@@ -228,13 +266,16 @@ footer h5 {
 .bot-left {
   position: relative;
 }
-.bot-left:before, .bot-left:after {
+
+.bot-left:before,
+.bot-left:after {
   content: "";
   position: absolute;
   bottom: -3px;
   left: -3px;
 
 }
+
 .bot-left:before {
   top: -3px;
   width: 3px;
@@ -243,6 +284,7 @@ footer h5 {
   background-image: -moz-linear-gradient(transparent, #ef6c00);
   background-image: -o-linear-gradient(transparent, #ef6c00);
 }
+
 .bot-left:after {
   right: -3px;
   height: 3px;
@@ -259,14 +301,14 @@ footer h5 {
   overflow-y: hidden;
 }
 
-#newsPage {
-}
+#newsPage {}
 
 
 /*////// Donate Page //////*/
 .donate h1 {
   margin-bottom: 4rem;
 }
+
 .donate .btn-large {
   height: 65px;
   line-height: 65px;
@@ -276,6 +318,14 @@ footer h5 {
 #donate-amazon {
   margin-bottom: 2%;
 }
+
+.smileDetails {
+  color: #fff;
+  opacity: 1;
+  text-shadow: 1px 1px #ef6c00;
+  margin-top: -30px;
+}
+
 .donate h5 {
   font-weight: 800;
   color: #fff;
@@ -284,6 +334,7 @@ footer h5 {
   margin-bottom: 3%;
   margin-top: 3%;
 }
+
 .donate .parallax img {
   opacity: 0.7;
 }
@@ -292,40 +343,62 @@ footer h5 {
 .events {
   min-height: 450px;
 }
+
 .events .center {
   margin-top: 5.5%;
   margin-bottom: 5.5%;
 }
+
 .events h2.tShadow {
   line-height: 165%;
 }
+
 .events .parallax img {
   left: 57% !important;
 }
-#eventsCopy{
+
+.eventRelease {
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.eventRelease a {
+  line-height: 2rem;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+}
+
+.hrEvents {
+  margin: 40px 0;
+}
+
+#eventsCopy {
   line-height: 2em;
 }
-.events #register-button, .events #gofundme-button {
+
+.events #register-button,
+.events #gofundme-button {
   height: 65px;
   line-height: 65px;
   margin-top: 0;
   font-size: 22px;
   word-spacing: 0.4em;
 }
+
 .buffer {
   margin-left: 3%;
   /*margin-right: 3%;*/
 }
+
 .buttons {
   margin-top: 3%;
   margin-bottom: 3%;
 }
 
 /*////// Register Page ///////*/
-#login {
+#login {}
 
-}
-#helperText{
+#helperText {
   text-align: center;
 }
 
@@ -336,12 +409,14 @@ footer h5 {
   background-size: cover;
   width: 100%;
 }
+
 .familyMember {
   margin-top: -7%;
 }
+
 .familyCard {
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-  color: rgba(0,0,0,0.87);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.87);
   line-height: 15px;
   font-family: 'Spinnaker', sans-serif;
   border-radius: 2px;
@@ -352,24 +427,29 @@ footer h5 {
   height: 150px;
   width: 150px;
 }
+
 #tricia {
   margin-top: 5%;
 }
+
 #tricia:hover {
   background-image: url("/assets/images/cjActive.gif");
   background-size: 25%;
   background-repeat: repeat-x;
 }
+
 #charlie:hover {
   background-image: url("/assets/images/cjActive.gif");
   background-size: 25%;
   background-repeat: repeat-x;
 }
+
 #cj:hover {
   background-image: url("/assets/images/cjActive.gif");
   background-size: 25%;
   background-repeat: repeat-x;
 }
+
 #brie:hover {
   background-image: url("/assets/images/cjActive.gif");
   background-size: 25%;
@@ -382,16 +462,21 @@ footer h5 {
     position: static;
     top: 40%;
   }
-  #media-banner .section, #index-banner .section {
+
+  #media-banner .section,
+  #index-banner .section {
     top: 10%;
   }
+
   #navLogoImg {
     height: 3em;
     margin-top: 13%;
   }
+
   #llFooter {
     margin-top: 5%;
   }
+
   .evTopBtn {
     margin-top: 4%;
     margin-bottom: 4%;
@@ -399,16 +484,21 @@ footer h5 {
 }
 
 @media only screen and (max-width : 600px) {
-  #media-banner .section, #index-banner .section {
+
+  #media-banner .section,
+  #index-banner .section {
     top: 0;
   }
+
   .parallax-container {
     min-height: 470px;
   }
+
   #navLogoImg {
     height: 3em;
     margin-top: 3%;
   }
+
   .card-image {
     display: none;
   }
@@ -416,6 +506,6 @@ footer h5 {
 
 @media only screen and (max-width : 528px) {
   #phoneBtn {
-   margin-top: 3%;
+    margin-top: 3%;
   }
 }

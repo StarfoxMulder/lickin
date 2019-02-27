@@ -1,6 +1,6 @@
  # Lickin' Leukemia
  
- Built [http://www.lickinleukemia.org](http://www.lickinleukemia.org/) for Lickin' Leukemia, a 501(c)(3) charitable organization.
+ Built [lickinleukemia.org](http://www.lickinleukemia.org/) for Lickin' Leukemia, a 501(c)(3) charitable organization.
  
  The organization focuses on combatting leukemia primarily on two fronts 
  - funding immunotherapy research

@@ -1,4 +1,8 @@
 window.onload = function() {
+
+  const currentYear = new Date().getFullYear();
+  $("#currentYear").text(currentYear);
+
   $(".featuredIcon").click(function(e){
     $(".featuredIcon").removeClass("bot-left");
     $(this).addClass("bot-left");
